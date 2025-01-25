@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabrielle Ulisses, Ana Beatriz Rocha Duarte">
+    <meta name="description" content="Exploração doKosmos e do clima, fornecendo imagens do universo e dados climáticos em tempo real.">
+    <meta name="keywords" content="kosmos, clima, imagens, tempo real, NASA, OpenWeatherMap">
+    <title>Explorando oKosmos e o Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="title is-3">Explorando o <i><b>kosmos</b></i> e o <i><b>clima</b></i></h1>
+    </header>
+
+    <section class="section introduction">
+        <h2 class="title is-4">Por que o <i><b>kosmos</b></i> e o <i><b>clima</b></i> importam?</h2>
+        <p>Desde os primórdios da humanidade, olhar para o céu sempre despertou fascínio e curiosidade. O <i><b>kosmos</b></i>, com suas estrelas, planetas e galáxias, nos ajuda a entender nossa própria existência. 🌌</p>
+        <p>Ao mesmo tempo, nosso planeta — o único lar conhecido da vida — depende de nosso entendimento do clima para prosperar. Informações climáticas confiáveis nos ajudam a tomar decisões no dia a dia e enfrentar as mudanças climáticas. 🌍</p>
+        <p>Este site une ciência e utilidade prática. Usamos a <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">NASA APOD</a> para trazer as belezas do universo e a <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a> para fornecer dados climáticos em tempo real.</p>
+        <p>Com as ferramentas aqui disponíveis, você poderá explorar imagens deslumbrantes do <i><b>kosmos</b></i> e obter informações úteis sobre o clima de sua cidade, tudo ao alcance de um clique.</p>
+        <p><strong>Como começar?</strong> Você pode começar explorando uma imagem doKosmos por data ou checando as condições climáticas de sua cidade. Estamos aqui para guiá-lo nessa jornada!</p>
+        <p>Explore e conecte-se com o universo e o clima ao seu redor. Estamos todos sob o mesmo céu!</p>
+    </section>
+
+    <section class="section" id="clima">
+        <h4 class="title is-4">Informações Climáticas</h4>
+        <p><label for="cidade">Digite sua cidade:</label></p>
+        <input type="text" id="cidade" placeholder="Exemplo: São Paulo" class="input is-medium">
+        <button id="buscarClima" class="button is-black">Buscar Clima</button>
+        <div class="content">
+            <p><strong id="climaDescricao"></strong> <span><img id="climaIcone" alt="Ícone do Clima" /></span></p>
+            <p><strong>Temperatura:</strong> <span id="climaTemperatura"></span></p>
+            <p><strong>Umidade:</strong> <span id="climaUmidade"></span></p>
+            <p><strong>Velocidade do vento:</strong> <span id="climaVento"></span></p>
+        </div>
+    </section>
+
+    <section class="section" id="kosmos">
+        <h4 class="title is-4">Explore oKosmos</h4>
+        <p id="desc">Digite uma data para explorar uma imagem do universo capturada pela NASA no dia correspondente. A partir dessa data, vamos buscar a imagem doKosmos que foi destacada pela NASA para você explorar!</p>
+        <p><label for="date">Buscar imagem em:</label><br>
+            <input type="date" name="date" id="date">
+            <button id="buscarKosmos" class="button is-black">Buscar Imagem</button>
+        </p>
+        <aside class="section">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img id="image" src="" alt="Imagem do universo" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p id="title" class="title is-4" style="margin: 0;"></p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p id="explicacao"></p>
+                        <p id="dataImagem"></p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    
+    <footer class="footer">
+        <p>Projeto final desenvolvido para a disciplina de Interfaces Web, pelas alunas Gabrielle Ulisses e Ana Beatriz Duarte.</p>
+    </footer>
+</body>
+</html>
