@@ -147,7 +147,7 @@ header {
     border: 1px solid #303030;
     padding: 10px;
     border-radius: 4px;
-    background-image: url("stars.jpg");
+    background-image: url("../img/stars.jpg");
     background-size: cover;
     color: rgb(255, 255, 255);
     margin-top: 10px;
@@ -192,7 +192,7 @@ header {
 }
 
 #kosmos {
-    background-image: url("fundo.jpg");
+    background-image: url("../img/fundo.jpg");
     background-size: cover;
 }
 
