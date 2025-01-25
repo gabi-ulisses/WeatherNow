@@ -41,3 +41,7 @@ WeatherNow é um projeto educacional desenvolvido durante a disciplina de Interf
 <a href="https://github.com/gabi-ulisses">
   <img src="https://github.com/gabi-ulisses.png" alt="Gabrielle Ulisses" style="width: 50px; height: 50px;">
 </a>
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
