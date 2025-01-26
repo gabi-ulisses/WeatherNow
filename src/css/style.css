@@ -199,3 +199,71 @@ header {
 footer{
     text-align: center;
 }
+
+/* Seção Imagens da Terra */
+#imagensTerra {
+    background-color: #020815df;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    min-height: 300px;
+}
+
+#imagensTerra h4 {
+    color: #ff6320;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#imagensTerra .date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#imagensTerra input[type="date"] {
+    width: 180px;
+    height: 40px;
+    font-size: 17px;
+    border: 1px solid #303030;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #172d41e6;
+    color: #ff6320;
+}
+
+#imagensTerra #buscarImagensTerra {
+    background-color: #172d41e6;
+    color: #ff6320;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#imagensTerra #buscarImagensTerra:hover {
+    background-color: #112232e6;
+}
+
+#imagensTerra .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#imagensTerra .image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
