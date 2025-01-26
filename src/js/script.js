@@ -1,6 +1,7 @@
 async function buscarKosmos(date) {
     const apiKeykosmos = 'yax5hrTcj9uVgTX3NpWwoE2T3pQPFQ2b2OCZbvfv';
     const urlkosmos = `https://api.nasa.gov/planetary/apod?api_key=${apiKeykosmos}&date=${date}`;
+    const urlPoulicao = `http://api.airvisual.com/v2/countries?key={{52858247-d8ed-4710-a1ae-3e340dcc4794}}`
     
     let responsekosmos = await fetch(urlkosmos);
     
@@ -53,6 +54,32 @@ async function buscarClima(cidade) {
     }
 }
 
+async function buscarImagensTerra(date) {
+    const apiKey = 'l1x92HVmrPYavVJzmcYTV1r4RogdKjk0y4W3Gey6';
+    const url = `https://api.nasa.gov/EPIC/api/natural/date/${date}?api_key=${apiKey}`;
+
+    let response = await fetch(url);
+
+    if (response.ok) {
+        let data = await response.json();
+
+        let img = document.querySelector('#imageTerra');
+        if (data.length > 0) {
+            let imageName = data[0].image;
+            let imageDate = date.replaceAll('-', '/');
+            img.src = `https://epic.gsfc.nasa.gov/archive/natural/${imageDate}/png/${imageName}.png`;
+            img.style.display = 'inline';
+        } else {
+            alert('Nenhuma imagem encontrada para a data fornecida.');
+        }
+    } else {
+        alert('Erro ao buscar as imagens da Terra. Tente novamente mais tarde.');
+    }
+}
+
+
+
+
 
 function main() {
     let btnkosmos = document.querySelector('#buscarKosmos');
@@ -68,6 +95,14 @@ function main() {
         let cidade = txtCidade.value;
         buscarClima(cidade);
     });
+
+    let btnImagensTerra = document.querySelector('#buscarImagensTerra');
+    btnImagensTerra.addEventListener('click', function () {
+    let txtDate = document.querySelector('#data');
+    let date = txtDate.value;
+    buscarImagensTerra(date);
+});
+
 }
 
 main();
