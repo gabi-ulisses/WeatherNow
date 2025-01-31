@@ -1,7 +1,6 @@
 async function buscarKosmos(date) {
     const apiKeykosmos = 'yax5hrTcj9uVgTX3NpWwoE2T3pQPFQ2b2OCZbvfv';
     const urlkosmos = `https://api.nasa.gov/planetary/apod?api_key=${apiKeykosmos}&date=${date}`;
-    const urlPoulicao = `http://api.airvisual.com/v2/countries?key={{52858247-d8ed-4710-a1ae-3e340dcc4794}}`
     
     let responsekosmos = await fetch(urlkosmos);
     
@@ -37,7 +36,7 @@ async function buscarClima(cidade) {
         climaDescricao.textContent = dataClima.weather[0].description;
 
         let climaTemperatura = document.querySelector('#climaTemperatura');
-        climaTemperatura.textContent = dataClima.main.temp + '°C';  // Corrigido aqui
+        climaTemperatura.textContent = dataClima.main.temp + '°C';  
 
         let climaUmidade = document.querySelector('#climaUmidade');
         climaUmidade.textContent = dataClima.main.humidity + '%';

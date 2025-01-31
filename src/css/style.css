@@ -13,19 +13,29 @@ header {
     font-size: 30px;
     background-color: #172d41;
     text-align: center;
-    color: #f4ecff;
+    color: #f4ecff !important;
+}
+
+
+header .title{
+    color: #ffffff;
 }
 
 /* Estilos específicos para a introdução */
 .introduction {
     background-color: #172d41e6;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 20px;
     border-radius: 8px;
     margin: 20px;
     margin-bottom: 80px;
     font-size: 18px;
     line-height: 1.6;
+}
+
+
+.introduction .title, .introduction strong{
+    color: #ffffff;
 }
 
 .introduction h2 {
