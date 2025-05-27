@@ -157,7 +157,7 @@ header .title{
     border: 1px solid #303030;
     padding: 10px;
     border-radius: 4px;
-    background-image: url("../img/stars.jpg");
+    background-image: url("../assets/imgstars.jpg");
     background-size: cover;
     color: rgb(255, 255, 255);
     margin-top: 10px;
@@ -202,7 +202,7 @@ header .title{
 }
 
 #kosmos {
-    background-image: url("../img/fundo.jpg");
+    background-image: url("../assets/imgfundo.jpg");
     background-size: cover;
 }
 

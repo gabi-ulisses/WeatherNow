@@ -46,7 +46,7 @@ async function buscarClima(cidade) {
 
         let climaIcone = document.querySelector('#climaIcone');
         let iconCode = dataClima.weather[0].icon;
-        climaIcone.src = `http://openweathermap.org/img/wn/${iconCode}.png`;
+        climaIcone.src = `http://openweathermap.org/assets/imgwn/${iconCode}.png`;
         climaIcone.style.display = 'inline';
     } else {
         alert('Erro ao buscar informações climáticas');
