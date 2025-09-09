@@ -118,6 +118,11 @@ header .title{
     display: none;
 }
 
+#clima strong {
+  color: #ffffff;
+  font-weight: var(--bulma-strong-weight);
+}
+
 /* Seção Kosmos */
 
 #kosmos #image {
@@ -151,7 +156,7 @@ header .title{
     margin: 0;
 }
 
-strong {
+#kosmos strong {
     width: auto;
     height: 40px;
     font-size: 17px;
@@ -171,11 +176,7 @@ strong {
     border: 1px solid;
     padding: 10px;
     border-radius: 4px;
-}
-
-#clima strong {
-  color: #ffffff;
-  font-weight: var(--bulma-strong-weight);
+    margin-top: 10px;
 }
 
 #kosmos #buscarKosmos{
