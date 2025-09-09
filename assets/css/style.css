@@ -164,6 +164,15 @@ strong {
     margin-top: 10px;
 }
 
+#kosmos input#date {
+    width: 180px;
+    height: 40px;
+    font-size: 17px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+}
+
 #clima strong {
   color: #ffffff;
   font-weight: var(--bulma-strong-weight);
