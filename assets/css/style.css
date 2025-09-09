@@ -151,7 +151,7 @@ header .title{
     margin: 0;
 }
 
-#kosmos input[type="date"] {
+strong {
     width: auto;
     height: 40px;
     font-size: 17px;
@@ -160,8 +160,13 @@ header .title{
     border-radius: 4px;
     background-image: url("../assets/imgstars.jpg");
     background-size: cover;
-    color: rgb(255, 255, 255);
+    color: #303030;
     margin-top: 10px;
+}
+
+#clima strong {
+  color: #ffffff;
+  font-weight: var(--bulma-strong-weight);
 }
 
 #kosmos #buscarKosmos{
@@ -169,7 +174,7 @@ header .title{
     background-color: #112232e6;
 }
 
-#kosmos input[type="date"]:focus {
+strong:focus {
     box-shadow: 0px 0px 0px 1px #484848;
     background-color: #f4ecff;
     outline: none;
